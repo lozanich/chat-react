@@ -1,0 +1,24 @@
+.row-messages {
+    flex-Direction: column;
+    position: absolute;
+    height: 90%;
+    width: 55%;
+}
+
+@media (max-width: 1024px) { 
+ .row-messages {
+     width: 100%;
+ }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    .row-messages {
+        width: 95%;
+    }
+}
+
+/* @media only screen and (max-width: 900px) {
+    .row-messages {
+        height: 80%;
+    }
+} */
