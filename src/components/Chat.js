@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "../styles/chat.css";
 import { CardMessage } from "../components/CardMessage";
+import { FormSend } from "../components/FormSend";
 
 export const Chat = () => {
   const messages = [
@@ -34,7 +35,7 @@ export const Chat = () => {
           })}
         </Col>
         <Col className="text-left" sm={12} md={12} lg={12}>
-          <h1>Form</h1>
+          <FormSend />
         </Col>
       </Row>
     </>
