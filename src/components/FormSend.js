@@ -3,7 +3,7 @@ import { Row, Col, Button, Alert } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { useForm } from "../hooks/useForm";
 
-export const FormSend = () => {
+export const FormSend = ({ handleSendMessage }) => {
   const { values, handleInputChange, reset } = useForm({
     message: "",
   });
@@ -20,7 +20,8 @@ export const FormSend = () => {
       setInvalidForm(false);
     }
 
-    console.log(message);
+    handleSendMessage(message);
+    reset();
   };
 
   return (
