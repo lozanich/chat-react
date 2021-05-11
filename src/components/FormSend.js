@@ -17,11 +17,10 @@ export const FormSend = ({ handleSendMessage }) => {
     if (message.trim().length <= 1) {
       setInvalidForm(true);
     } else {
+      handleSendMessage(message);
+      reset();
       setInvalidForm(false);
     }
-
-    handleSendMessage(message);
-    reset();
   };
 
   return (
